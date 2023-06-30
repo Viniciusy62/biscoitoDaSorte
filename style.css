@@ -10,4 +10,7 @@
 
 body {
   font-size: 1.6rem;
+  background: linear-gradient(45deg, #190361 0%, #B0F 100%) no-repeat;
+  height: 100vh;
 }
+
