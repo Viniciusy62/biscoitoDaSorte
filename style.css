@@ -56,9 +56,12 @@ main {
   font-family: "DM Sans";
 }
 
-#cookie {
+.cookie {
   margin: 2.6rem auto;
   width: min(24.8rem, 90%);
+}
+
+#cookie {
   cursor: pointer;
 }
 
@@ -76,4 +79,29 @@ main {
   100% {
     rotate: 0;
   }
+}
+
+#btn-new-cookie {
+  border: none;
+  padding: 16px;
+  border-radius: 4px;
+  background-color: #FF9500;
+  color: #fff;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.message {
+  padding: 10px;
+  background-color: #E4EDF1;
+
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+  font-size: 24px;
+  font-family: "Dancing Script";
+  font-weight: 400;
+  text-align: center;
+  color: #000;
 }
