@@ -94,6 +94,10 @@ main {
   cursor: pointer;
 }
 
+.messages {
+  margin-top: 12px;
+}
+
 .message {
   padding: 10px;
   background-color: #E4EDF1;
@@ -104,4 +108,8 @@ main {
   font-weight: 400;
   text-align: center;
   color: #000;
+}
+
+.empty {
+  display: none;
 }

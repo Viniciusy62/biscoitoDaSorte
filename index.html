@@ -7,21 +7,31 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <link
-  href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Dancing+Script&family=Montserrat:wght@400;600;700&display=swap"
-  rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Dancing+Script&family=Montserrat:wght@400;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  
+
   <title>Biscoito da Sorte</title>
 </head>
 
 <body><!--4º Project-->
   <main>
-    <section id="app">
+    <section class="home">
       <h1 class="title">Qual é a sua sorte de hoje?</h1>
       <p class="txt">Abra o biscoito e descubra!</p>
+      
       <img src="./images/ebene-4.svg" alt="Biscoito da Sorte" id="cookie" class="cookie">
+    </section>
+
+    <section class="messages empty">
+      <h1 class="title">Aqui está a sua sorte de hoje:</h1>
+      <p class="message"></p>
+      
+      <img src="./images/cookie-open.svg" alt="Biscoito da Sorte aberto" class="cookie" ">
+      
+      <button id="btn-new-cookie">Abrir outro biscoito</button>
     </section>
   </main>
   <script src="./main.js" type="module"></script>
