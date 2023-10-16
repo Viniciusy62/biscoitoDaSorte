@@ -2,25 +2,23 @@ import { randomGenerate } from "./randomGenerate.js";
 import { messages } from "./messages.js";
 
 
-export const app = document.querySelector('#app');
-export const cookie = document.querySelector('#cookie');
+const btnCookie = document.querySelector('#cookie');
+const btnRestart = document.querySelector('#btn-new-cookie');
+const home = document.querySelector(".home")
+const newScreenMessage = document.querySelector('.messages');
+const message = document.querySelector('.message');
 
-const btnRestartApp = `
-<div>
-  <button id="btn-new-cookie">Abrir outro biscoito</button>
-</div>
-`
+function newMessage() {
+  home.classList.add("empty")
+  newScreenMessage.classList.remove("empty")
 
-export function newMessage() {
-  return app.innerHTML = `
-  <h1 class="title">Aqui está a sua sorte de hoje:</h1>
-  
-  <p class="message">${messages[randomGenerate()]}</p>
-  
-  <img src="./images/cookie-open.svg" alt="Biscoito da Sorte aberto" class="cookie" ">
-
-  ${btnRestartApp}
-  `
+  message.textContent = messages[randomGenerate()]
 }
 
-cookie.addEventListener("click", newMessage)
+function restart() {
+  newScreenMessage.classList.add("empty")
+  home.classList.remove("empty")
+}
+
+btnCookie.addEventListener("click", newMessage)
+btnRestart.addEventListener("click", restart)
